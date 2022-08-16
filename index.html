@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/vendors~app~embed~sandbox~sandbox-startup.bcc15d438.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/vendors~app~embed~sandbox-startup.6e3433fd3.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/default~app~embed~sandbox~sandbox-startup.55b6cfc89.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/sandbox-startup.5298fe502.js"></script>
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/vendors~app~codemirror-editor~monaco-editor~sandbox.5ca13c344.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/common-sandbox.2744d008e.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/vendors~app~sandbox.49a2d4732.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/vendors~sandbox.aefe8771e.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/default~app~embed~sandbox.9ea60a521.chunk.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/sandbox.7e9b6d925.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/banner.be879265d.js"></script>
+  <script>
+
+
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7207c12b18139acc","token":"7449176f14aa420c959831edd48bd5b7","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+<H6>Hosting with
+  <a href="https://www.netlify.com">Netlify</a>
+</H6>
+</body>
+</html>
